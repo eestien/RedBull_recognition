@@ -4,8 +4,9 @@
    `def run_example` - применяет модель на фотку 
 3. model & model_lite - папки для моделей (lite - для tf lite)
 эти папки не передались на репо так как модель много весит, поэтому создай сам и и помести в model модельку
-4. tf_lite - пытался модель перенести в формат tf lite, но там ошибка с local time tensorflow
+4. `tf_lite` - пытался модель перенести в формат tf lite, но там ошибка с local time tensorflow
 (google2fix)
+5. `config.py` - set filepath to image to predict
 
 Предсказание с вероятностью 90%(использовал предобученную vgg16) - даже банку колы отличает 
 если 1. - значит RedBull
