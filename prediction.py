@@ -2,6 +2,7 @@
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 from keras.models import load_model
+import config as cf
 
 
 # load and prepare the image
@@ -22,7 +23,7 @@ def load_image(filename):
 # load an image and predict the class
 def run_example():
     # load the image
-    img = load_image('data/pred_imgs/not_pred.jpg')
+    img = load_image(cf.img_to_pred)
     # load model
     model = load_model('model/redbull_model_vgg.h5')
     # predict the class
