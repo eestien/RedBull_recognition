@@ -1,14 +1,11 @@
-1. `main.py` - здесь обучал
-2. `prediction.py` - здесь функкции для предсказания фотки:
-   `def load_image` - для преобразования фотки в нужный формат
-   `def run_example` - применяет модель на фотку 
-3. model & model_lite - папки для моделей (lite - для tf lite)
-эти папки не передались на репо так как модель много весит, поэтому создай сам и и помести в model модельку
-4. `tf_lite` - пытался модель перенести в формат tf lite, но там ошибка с local time tensorflow
-(google2fix)
-5. `config.py` - set filepath to image to predict
+1. `define_model.py` - Model defining 
+2. `train.py` - model training
+3. `prediction.py` - Predict(photo classification) functions:
+   - `def load_image` - photo preproccesing
+   - `def run_example` - model applying on photo 
+4. model & model_lite - folders where models strores (lite - for tf_lite)
+5. `tf_lite` - transfer model to tf lite format,
+6. `config.py` - set filepath to image to predict
 
-Предсказание с вероятностью 90%(использовал предобученную vgg16) - даже банку колы отличает 
-если 1. - значит RedBull
+Accuracy = 92%
 
-Если не redbull - модель выводит вероятность (например, 0.002655)
